@@ -17,7 +17,7 @@ public class Square implements Forme {
     }
     @Override
     public String toString() {
-        return "Square(side=" + side + ")";
+        return "Square(side=" + side + " cm)";
     }
 }
 
