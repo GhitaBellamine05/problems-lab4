@@ -65,8 +65,9 @@ public class IntegerList
                     list[j] = list[j+1];
                 }
                 numberOfElements--;
+                break;
             }
-            break;
+
         }
     }
     //-------------------------------------------------------
