@@ -20,10 +20,10 @@ public class Test {
 
 
         // displaying the students of each major
-        System.out.println("=== Computer Science Students ===");
+        System.out.println("==== The list of students in the Computer Science major ==== ");
         System.out.print(csMajor.getStudentListAsString());
 
-        System.out.println("=== Mathematics Students ===");
+        System.out.println("==== The list of students in the Mathematics major ==== ");
         System.out.print(mathMajor.getStudentListAsString());
 
         // Remove a student
