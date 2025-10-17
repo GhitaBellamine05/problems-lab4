@@ -19,7 +19,7 @@ public class Sales
         int maxSaleIndex = 0;
         int maximumSale = sales[maxSaleIndex];
         int minSaleIndex = 0;
-        int minimumSale = sales[0];
+        int minimumSale = sales[minSaleIndex];
         for (int i=0; i<sales.length; i++)
         {
             // Displaying the information
@@ -46,7 +46,7 @@ public class Sales
         System.out.println("Salesperson " +  (minSaleIndex+1) + " had the lowest sale with $ "+minimumSale);
 
         // Ask the user to enter an amount
-        System.out.print("Enter an amount ");
+        System.out.print("Enter an amount : ");
         int amount = scan.nextInt();
         int counter = 0;
         for(int i = 0; i< SALESPEOPLE; i++){
@@ -55,7 +55,7 @@ public class Sales
                 counter++;
             }
         }
-        // Displaying the total number of salepeople exceeeding the amount entered
+        // Displaying the total number of salespeople exceeding the amount entered
         System.out.println("Total number of salespeople exceeding $ "+ amount + " : "+counter);
 
     }
