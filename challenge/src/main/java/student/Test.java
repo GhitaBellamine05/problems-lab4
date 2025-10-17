@@ -41,11 +41,11 @@ public class Test {
         // show occupancy rate
         System.out.println("CS Major Capacity : 50"); //this is because we consider that each major cannot exceed 50 students
         System.out.printf("Current enrollment: %d students \n", csMajor.getStudentCount());
-        System.out.printf("CS Major Occupancy Rate: %.2f%%\n", csMajor.getOcupancyRate());
+        System.out.printf("CS Major Occupancy Rate: %.2f%%\n", csMajor.getOccupancyRate());
         System.out.println();
         System.out.println("Math Major Capacity : 50"); //this is because we consider that each major cannot exceed 50 students
         System.out.printf("Current enrollment: %d students\n", mathMajor.getStudentCount());
-        System.out.printf("Math Major Occupancy Rate: %.2f%%\n", mathMajor.getOcupancyRate());
+        System.out.printf("Math Major Occupancy Rate: %.2f%%\n", mathMajor.getOccupancyRate());
     }
 }
 

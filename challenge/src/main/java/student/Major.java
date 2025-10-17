@@ -1,5 +1,7 @@
 package student;
 
+import java.util.Objects;
+
 public class Major {
     private static int nextId = 1;
     private int id;
@@ -8,6 +10,7 @@ public class Major {
     private Student[] students = new Student[50]; // a major cannot exceed 50 students
     private int studentCount;
 
+    public Major(){}
     public Major(String code, String name) {
         this.code = code;
         this.name = name;
@@ -38,7 +41,7 @@ public class Major {
     // finding a student based on the cne
     public Student findStudentByCNE(String cne){
         for(Student student : students){
-            if(student.getCne()== cne) {
+            if(Objects.equals(student.getCne(), cne)) {
                 return student;
             }
         }
@@ -69,7 +72,7 @@ public class Major {
         }
     }
     // occupancyRate
-    double getOcupancyRate(){
+    double getOccupancyRate(){
         int capacity = students.length;
         return ((double) getStudentCount() /capacity) * 100;
 
