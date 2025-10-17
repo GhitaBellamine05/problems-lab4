@@ -10,12 +10,12 @@ public class Instructor extends Person {
     public Instructor(){
         this("","","","","");
     }
-    public Instructor(String nom, String prenom, String telephone, String email) {
-        this(nom,prenom,telephone,email,"");
+    public Instructor(String prenom, String nom, String telephone, String email) {
+        this(prenom,nom,telephone,email,"");
 
     }
-    public Instructor(String nom, String prenom, String telephone, String email, String employeeNumber) {
-        super(nom, prenom, telephone, email);
+    public Instructor(String prenom, String nom, String telephone, String email, String employeeNumber) {
+        super(prenom, nom, telephone, email);
         this.employeeNumber = employeeNumber;
 
     }
@@ -25,14 +25,14 @@ public class Instructor extends Person {
     }
     // Summary line method
     public String summaryLine(){
-        return String.format("Instructor [ employeeNumber = %s, LastName = %s, firstName = %s ]",employeeNumber,getSecondName(),getFirstName());
+        return String.format("Instructor [ employeeNumber = #%s, LastName = %s, firstName = %s ]",employeeNumber,getSecondName(),getFirstName());
     }
     //
     public String toCard(){
         StringBuilder sb = new StringBuilder();
         sb.append("Instructor").append("\n")
                 .append("-----------------\n")
-                .append("Employee #: ").append(employeeNumber).append("\n")
+                .append("Employee : #").append(employeeNumber).append("\n")
                 .append("Name      : ").append(getSecondName()).append(", ").append(getFirstName()).append("\n")
                 .append("Email     : ").append(getEmail()).append("\n")
                 .append("Phone     : ").append(getPhone()).append("\n");
